@@ -29,4 +29,34 @@
   .container-custom {
     @apply max-w-6xl mx-auto;
   }
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(10deg);
+  }
+  60% {
+    transform: translateX(100%) rotate(10deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(10deg);
+  }
+}
+
+.shine-effect::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg, rgba(255,255,255,0) 60%, rgba(255,255,255,0.7) 80%, rgba(255,255,255,0) 100%);
+  transform: translateX(-100%) rotate(10deg);
+  animation: shine 2.5s linear infinite;
+  pointer-events: none;
+}
+
+.shine-effect {
+  position: relative;
+  overflow: hidden;
 } 
