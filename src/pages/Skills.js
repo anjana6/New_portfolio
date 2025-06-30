@@ -100,7 +100,7 @@ const Skills = () => {
   return (
     <div className="section-padding">
       <div className="container-custom">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center font-mono">
           My Tech Arsenal
         </h1>
 
