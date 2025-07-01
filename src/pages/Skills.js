@@ -58,7 +58,7 @@ const Skills = () => {
       icon: FaNodeJs,
       skills: [
         { name: 'Node JS', icon: FaNodeJs, color: 'text-green-600' },
-        { name: 'Express JS', icon: SiExpress, color: 'text-gray-800' },
+        { name: 'Express JS', icon: SiExpress, color: 'text-black' },
         { name: 'Nest JS', icon: SiNestjs, color: 'text-red-600' },
         { name: 'Serverless', icon: SiServerless, color: 'text-orange-500' }
       ]
@@ -76,7 +76,7 @@ const Skills = () => {
       title: 'Tools & Platforms',
       icon: FaTools,
       skills: [
-        { name: 'Git & GitHub', icon: FaGithub, color: 'text-gray-800' },
+        { name: 'Git & GitHub', icon: FaGithub, color: 'text-black' },
         { name: 'Postman', icon: SiPostman, color: 'text-orange-500' },
         { name: 'Swagger', icon: SiSwagger, color: 'text-green-600' },
         { name: 'BitBucket', icon: SiBitbucket, color: 'text-blue-600' },
@@ -118,12 +118,12 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
-                    className="bg-gray-200 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300 text-center group shine-effect"
+                    className="backdrop-blur-md bg-white/10 rounded-lg shadow-md p-6 border border-white/20 hover:shadow-lg transition-shadow duration-300 text-center group shine-effect"
                   >
                     <div className={`text-4xl mb-3 ${skill.color} group-hover:scale-110 transition-transform duration-200`}>
                       <skill.icon />
                     </div>
-                    <h3 className="font-semibold text-gray-900 text-sm">
+                    <h3 className="font-semibold text-white text-sm">
                       {skill.name}
                     </h3>
                   </div>
