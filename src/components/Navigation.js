@@ -23,7 +23,7 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
-          <div className="text-xl font-bold text-primary">DB</div>
+          <div className="text-xl font-bold text-primary">AS</div>
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <Link

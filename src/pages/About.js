@@ -58,10 +58,12 @@ const About = () => {
                 <div className="relative">
                   <div className="w-56 h-56 lg:w-72 lg:h-72 rounded-full bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center overflow-hidden">
                     <div className="w-full h-full bg-gradient-to-br from-blue-400 to-blue-500 rounded-full flex items-center justify-center">
-                      <div className="w-5/6 h-5/6 bg-white rounded-full flex items-center justify-center shadow-lg">
-                        <div className="w-4/5 h-4/5 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 text-lg lg:text-xl">
-                          Profile Image
-                        </div>
+                      <div className="w-5/6 h-5/6 bg-white rounded-full flex items-center justify-center shadow-lg overflow-hidden">
+                        <img 
+                          src="/assets/profile.png" 
+                          alt="Anjana Shakthi Profile" 
+                          className="w-full h-full object-cover rounded-full"
+                        />
                       </div>
                     </div>
                   </div>
@@ -73,9 +75,8 @@ const About = () => {
               
               <div className="text-lg text-white leading-relaxed">
                 <p>
-                  I'm a graduate software engineer from the University of Kelaniya Sri Lanka. 
-                  I have a 2+ years of extensive experience in Software Development as a software engineer. 
-                  I see myself as a full-stack web developer Mostly Specialized in JavaScript & TypeScript.
+                I am a graduate software engineer from the University of Kelaniya, Sri Lanka, with over 4 years of hands-on experience in software development. 
+                I see myself as a full-stack web developer Mostly Specialized in JavaScript & TypeScript.
                 </p>
                 <p className="mt-4">
                   My greatest passion in life is to do a better service for the industry and also the society.
