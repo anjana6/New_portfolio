@@ -17,7 +17,7 @@ const Projects = () => {
       id: 2,
       title: 'Portfolio WebApp',
       description: 'This is a personal portfolio web application developed using React.js, Tailwind CSS, and custom CSS. It is a fully frontend-only project, designed to highlight my skills, experience, and featured projects in a clean and responsive layout.',
-      image: 'https://res.cloudinary.com/ashakthi/image/upload/v1699059490/portfolio/rf9rp76kprixaf3awywu.png',
+      image: '/assets/portfolio.png',
       technologies: ['React.js', 'Tailwind CSS', 'CSS'],
       githubLink: '#',
       liveLink: '#'

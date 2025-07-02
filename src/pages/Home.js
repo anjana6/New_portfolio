@@ -61,7 +61,7 @@ const Home = () => {
 
   const socialLinks = [
     { icon: FaLinkedin, href: 'https://www.linkedin.com/in/anjanajayasinghe/', label: 'LinkedIn' },
-    { icon: FaInstagram, href: '#', label: 'Instagram' },
+    { icon: FaInstagram, href: 'https://www.instagram.com/sharkja123?igsh=MTQyOHBuN2Z6emtyOA==', label: 'Instagram' },
     { icon: FaGithub, href: 'https://github.com/anjana6', label: 'GitHub' },
   ];
 
@@ -80,8 +80,8 @@ const Home = () => {
             {isTyping && <span className="cursor">|</span>}
           </h2>
           
-          <p className="text-xl text-white mb-8 max-w-3xl mx-auto leading-relaxed">
-            Innovating the web with purpose and precision. As a full-stack engineer, I create accessible, user-friendly digital experiences that leave a lasting impact.
+          <p className="text-xl text-white mb-8 max-w-3xl mx-auto leading-relaxed text-center">
+          I create functional, scalable, and user-friendly applications to solve real problems.
           </p>
           
           <div className="flex justify-center space-x-6 mb-8">
