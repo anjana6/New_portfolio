@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 const Projects = () => {
@@ -20,7 +20,7 @@ const Projects = () => {
       image: '/assets/portfolio.png', 
       technologies: ['React.js', 'Tailwind CSS', 'CSS'],
       githubLink: 'https://github.com/anjana6/anjana_portfolio',
-      liveLink: 'https://anjana6.github.io/anjana_portfolio'
+      liveLink: 'https://anjana-portfolio.vercel.app/'
     },
     {
       id: 3,
