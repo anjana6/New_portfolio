@@ -19,17 +19,17 @@ const Projects = () => {
       description: 'This is a personal portfolio web application developed using React.js, Tailwind CSS, and custom CSS. It is a fully frontend-only project, designed to highlight my skills, experience, and featured projects in a clean and responsive layout.',
       image: '/assets/portfolio.png',
       technologies: ['React.js', 'Tailwind CSS', 'CSS'],
-      githubLink: '#',
+      githubLink: 'https://github.com/anjana6/anjana_portfolio',
       liveLink: '#'
     },
     {
       id: 3,
-      title: 'Chat Application',
-      description: 'This is a small chat application. React, Redux and Nodejs are the technologies that I am using in this application. Socket.io is the special library used in this application. That is used to manage the real-time thing. I used the MongoDB database system to store user details and user messages.',
-      image: 'https://res.cloudinary.com/ashakthi/image/upload/v1699059490/portfolio/rf9rp76kprixaf3awywu.png',
-      technologies: ['React.js', 'Node.js', 'Express', 'MongoDB', 'Socket.io'],
-      githubLink: '#',
-      liveLink: '#'
+      title: 'Fun Chat App',
+      description: 'This is a small chat application I developed during university to gain experience with Socket.IO. It is built using React, Redux, and Node.js. Socket.IO is used to handle real-time messaging, while MongoDB serves as the database for storing user details and chat messages.',
+      image: '/assets/webchatapp.png',
+      technologies: ['React.js', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'Material UI'],
+      githubLink: 'https://github.com/anjana6/Web-ChatApp',
+      liveLink: 'https://youtu.be/XrQGqp-Idos'
     }
   ];
 
