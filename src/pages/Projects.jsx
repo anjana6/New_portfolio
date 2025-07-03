@@ -20,7 +20,7 @@ const Projects = () => {
       image: '/assets/portfolio.png',
       technologies: ['React.js', 'Tailwind CSS', 'CSS'],
       githubLink: 'https://github.com/anjana6/anjana_portfolio',
-      liveLink: '#'
+      liveLink: 'https://anjana6.github.io/anjana_portfolio'
     },
     {
       id: 3,
