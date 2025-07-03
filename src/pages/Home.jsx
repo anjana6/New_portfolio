@@ -52,7 +52,7 @@ const Home = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/assets/Anjana(cv).pdf';
+    link.href = `${process.env.PUBLIC_URL}/assets/Anjana(cv).pdf`;
     link.download = 'Anjana(CV).pdf';
     document.body.appendChild(link);
     link.click();

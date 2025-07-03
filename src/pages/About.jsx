@@ -60,7 +60,7 @@ const About = () => {
                     <div className="w-full h-full bg-gradient-to-br from-blue-400 to-blue-500 rounded-full flex items-center justify-center">
                       <div className="w-5/6 h-5/6 bg-white rounded-full flex items-center justify-center shadow-lg overflow-hidden">
                         <img 
-                          src="/assets/profile.png" 
+                          src={`${process.env.PUBLIC_URL}/assets/profile.png`} 
                           alt="Anjana Shakthi Profile" 
                           className="w-full h-full object-cover rounded-full"
                         />

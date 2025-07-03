@@ -17,7 +17,7 @@ const Projects = () => {
       id: 2,
       title: 'Portfolio WebApp',
       description: 'This is a personal portfolio web application developed using React.js, Tailwind CSS, and custom CSS. It is a fully frontend-only project, designed to highlight my skills, experience, and featured projects in a clean and responsive layout.',
-      image: '/assets/portfolio.png',
+      image: `${process.env.PUBLIC_URL}/assets/portfolio.png`, 
       technologies: ['React.js', 'Tailwind CSS', 'CSS'],
       githubLink: 'https://github.com/anjana6/anjana_portfolio',
       liveLink: 'https://anjana6.github.io/anjana_portfolio'
@@ -26,7 +26,7 @@ const Projects = () => {
       id: 3,
       title: 'Fun Chat App',
       description: 'This is a small chat application I developed during university to gain experience with Socket.IO. It is built using React, Redux, and Node.js. Socket.IO is used to handle real-time messaging, while MongoDB serves as the database for storing user details and chat messages.',
-      image: '/assets/webchatapp.png',
+      image: `${process.env.PUBLIC_URL}/assets/webchatapp.png`,
       technologies: ['React.js', 'Node.js', 'Express', 'MongoDB', 'Socket.io', 'Material UI'],
       githubLink: 'https://github.com/anjana6/Web-ChatApp',
       liveLink: 'https://youtu.be/XrQGqp-Idos'
