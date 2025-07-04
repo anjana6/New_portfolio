@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO';
 
 const Experience = () => {
 
@@ -68,64 +69,72 @@ const Experience = () => {
   ];
 
   return (
-    <div className="section-padding">
-      <div className="container-custom">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center font-mono">
-          Professional Experience
-        </h1>
+    <>
+      <SEO 
+        title="Work Experience - Anjana Shakthi's Professional Journey"
+        description="Explore Anjana Shakthi's professional experience at Bevolv, Inova IT Systems, Mobile App Mart, and Redblocks. Full-stack development projects and achievements."
+        keywords="Software Engineer Experience, Full Stack Developer Work History, React Developer Jobs, Node.js Developer Experience, Professional Background, Work Portfolio"
+        url="/experience"
+      />
+      <div className="section-padding">
+        <div className="container-custom">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center font-mono">
+            Professional Experience
+          </h1>
 
-        <div className="w-full">
-          {experiences.map((experience, index) => (
-            <div key={experience.id} className="relative">
-              <div className="flex flex-col md:flex-row md:items-start md:space-x-8 mb-12">
-                <div className="w-60 text-right pr-8">
-                  <h3 className="text-xl font-bold text-white mb-1">
-                    {experience.company}
-                  </h3>
-                  <p className="text-white text-sm whitespace-nowrap">
-                    {experience.period}
-                  </p>
-                </div>
-                
-                <div className="hidden md:flex flex-shrink-0 justify-center">
-                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                    {experience.logo}
-                  </div>
-                </div>
-                
-                <div className="flex-1 backdrop-blur-md bg-white/10 border border-white/20 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                  <div className="mb-4">
-                    <h4 className="text-lg font-semibold text-primary mb-1">
-                      {experience.position}
-                    </h4>
+          <div className="w-full">
+            {experiences.map((experience, index) => (
+              <div key={experience.id} className="relative">
+                <div className="flex flex-col md:flex-row md:items-start md:space-x-8 mb-12">
+                  <div className="w-60 text-right pr-8">
+                    <h3 className="text-xl font-bold text-white mb-1">
+                      {experience.company}
+                    </h3>
+                    <p className="text-white text-sm whitespace-nowrap">
+                      {experience.period}
+                    </p>
                   </div>
                   
-                  <ul className="space-y-2">
-                    {experience.achievements.map((achievement, achievementIndex) => (
-                      <li key={achievementIndex} className="text-white flex items-start">
-                        <span className="text-primary mr-2 mt-1">•</span>
-                        <span>{achievement}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="hidden md:flex flex-shrink-0 justify-center">
+                    <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                      {experience.logo}
+                    </div>
+                  </div>
+                  
+                  <div className="flex-1 backdrop-blur-md bg-white/10 border border-white/20 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                    <div className="mb-4">
+                      <h4 className="text-lg font-semibold text-primary mb-1">
+                        {experience.position}
+                      </h4>
+                    </div>
+                    
+                    <ul className="space-y-2">
+                      {experience.achievements.map((achievement, achievementIndex) => (
+                        <li key={achievementIndex} className="text-white flex items-start">
+                          <span className="text-primary mr-2 mt-1">•</span>
+                          <span>{achievement}</span>
+                        </li>
+                      ))}
+                    </ul>
 
-                  <div className="flex flex-wrap gap-2 mt-6">
-                    {experience.technologies.map((tech, techIndex) => (
-                      <span
-                        key={techIndex}
-                        className="inline-block bg-gradient-to-r from-emerald-400 to-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-sm border border-white/20"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+                    <div className="flex flex-wrap gap-2 mt-6">
+                      {experience.technologies.map((tech, techIndex) => (
+                        <span
+                          key={techIndex}
+                          className="inline-block bg-gradient-to-r from-emerald-400 to-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-sm border border-white/20"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

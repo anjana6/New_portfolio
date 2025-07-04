@@ -33,6 +33,7 @@ import {
   SiClickup,
   SiJira
 } from 'react-icons/si';
+import SEO from '../components/SEO';
 
 const Skills = () => {
 
@@ -98,42 +99,50 @@ const Skills = () => {
   ];
 
   return (
-    <div className="section-padding">
-      <div className="container-custom">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center font-mono">
-          My Tech Arsenal
-        </h1>
+    <>
+      <SEO 
+        title="Skills & Technologies - Anjana Shakthi's Technical Expertise"
+        description="Explore Anjana Shakthi's technical skills including React, Node.js, TypeScript, MongoDB, and modern web development technologies. Full-stack developer expertise."
+        keywords="React Developer, Node.js Developer, TypeScript Developer, Full Stack Skills, Web Development Technologies, JavaScript, MongoDB, MySQL, Frontend, Backend"
+        url="/skills"
+      />
+      <div className="section-padding">
+        <div className="container-custom">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center font-mono">
+            My Tech Arsenal
+          </h1>
 
-        <div className="space-y-16">
-          {skillCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex}>
-              <div className="flex items-center mb-8">
-                <category.icon className="text-3xl text-primary mr-3" />
-                <h2 className="text-xl font-bold text-white">
-                  {category.title}
-                </h2>
-              </div>
-              
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-16">
-                {category.skills.map((skill, skillIndex) => (
-                  <div
-                    key={skillIndex}
-                    className="backdrop-blur-md bg-white/10 rounded-lg shadow-md p-6 border border-white/20 hover:shadow-lg transition-shadow duration-300 text-center group shine-effect"
-                  >
-                    <div className={`text-4xl mb-3 ${skill.color} group-hover:scale-110 transition-transform duration-200`}>
-                      <skill.icon />
+          <div className="space-y-16">
+            {skillCategories.map((category, categoryIndex) => (
+              <div key={categoryIndex}>
+                <div className="flex items-center mb-8">
+                  <category.icon className="text-3xl text-primary mr-3" />
+                  <h2 className="text-xl font-bold text-white">
+                    {category.title}
+                  </h2>
+                </div>
+                
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-16">
+                  {category.skills.map((skill, skillIndex) => (
+                    <div
+                      key={skillIndex}
+                      className="backdrop-blur-md bg-white/10 rounded-lg shadow-md p-6 border border-white/20 hover:shadow-lg transition-shadow duration-300 text-center group shine-effect"
+                    >
+                      <div className={`text-4xl mb-3 ${skill.color} group-hover:scale-110 transition-transform duration-200`}>
+                        <skill.icon />
+                      </div>
+                      <h3 className="font-semibold text-white text-sm">
+                        {skill.name}
+                      </h3>
                     </div>
-                    <h3 className="font-semibold text-white text-sm">
-                      {skill.name}
-                    </h3>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

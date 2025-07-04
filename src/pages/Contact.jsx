@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaInstagram, FaGithub, FaFacebook } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
+import SEO from '../components/SEO';
 
 const Contact = () => {
   const contactInfo = [
@@ -84,82 +85,90 @@ const Contact = () => {
   };
 
   return (
-    <div className="section-padding">
-      <div className="container-custom">
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center font-mono">
-          Get in Touch
-        </h1>
-
-        <p className="text-gray-300 mb-8 text-center max-w-2xl mx-auto leading-relaxed">
-          I'm always interested in hearing about new opportunities and exciting projects. 
-          Feel free to reach out through on these platforms
-        </p>
-
-    
-        <div className="text-center mb-12">
-          <button
-            onClick={handleGetInTouch}
-            className="bg-gradient-to-r from-emerald-400 to-emerald-600 hover:from-emerald-700 hover:from-emerald-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-          >
+    <>
+      <SEO 
+        title="Contact Anjana Shakthi - Get in Touch"
+        description="Get in touch with Anjana Shakthi for collaboration opportunities, project inquiries, or professional networking. Contact via email, LinkedIn, or GitHub."
+        keywords="Contact Anjana Shakthi, Software Engineer Contact, Full Stack Developer Contact, Hire Developer, Collaboration Opportunities"
+        url="/contact"
+      />
+      <div className="section-padding">
+        <div className="container-custom">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center font-mono">
             Get in Touch
-          </button>
-        </div>
+          </h1>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8">
-            
-            <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8 border border-white/20 shadow-2xl">
-              {/* <h2 className="text-2xl font-bold text-white mb-6">
-                Contact Details
-              </h2> */}
+          <p className="text-gray-300 mb-8 text-center max-w-2xl mx-auto leading-relaxed">
+            I'm always interested in hearing about new opportunities and exciting projects. 
+            Feel free to reach out through on these platforms
+          </p>
 
-              <div className="space-y-6">
-                {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-center space-x-4 group">
-                    <div className={`w-12 h-12 ${info.bgColor} rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-all duration-300`}>
-                      <info.icon className="text-xl" />
+      
+          <div className="text-center mb-12">
+            <button
+              onClick={handleGetInTouch}
+              className="bg-gradient-to-r from-emerald-400 to-emerald-600 hover:from-emerald-700 hover:from-emerald-700 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+            >
+              Get in Touch
+            </button>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-8">
+              
+              <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8 border border-white/20 shadow-2xl">
+                {/* <h2 className="text-2xl font-bold text-white mb-6">
+                  Contact Details
+                </h2> */}
+
+                <div className="space-y-6">
+                  {contactInfo.map((info, index) => (
+                    <div key={index} className="flex items-center space-x-4 group">
+                      <div className={`w-12 h-12 ${info.bgColor} rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-all duration-300`}>
+                        <info.icon className="text-xl" />
+                      </div>
+                      <div>
+                        <p className="font-semibold text-white">{info.label}</p>
+                        <a
+                          href={info.href}
+                          className="text-gray-300 hover:text-white transition-colors duration-200"
+                        >
+                          {info.value}
+                        </a>
+                      </div>
                     </div>
-                    <div>
-                      <p className="font-semibold text-white">{info.label}</p>
-                      <a
-                        href={info.href}
-                        className="text-gray-300 hover:text-white transition-colors duration-200"
-                      >
-                        {info.value}
-                      </a>
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
 
-            
-            <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8 border border-white/20 shadow-2xl">
-              {/* <h2 className="text-2xl font-bold text-white mb-6">
-                Connect With Me
-              </h2> */}
+              
+              <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8 border border-white/20 shadow-2xl">
+                {/* <h2 className="text-2xl font-bold text-white mb-6">
+                  Connect With Me
+                </h2> */}
 
-              <div className="grid grid-cols-2 gap-4">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 group"
-                  >
-                    <div className={`w-10 h-10 ${social.bgColor} ${social.hoverColor} rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-all duration-300`}>
-                      <social.icon className="text-lg" />
-                    </div>
-                    <span className="font-medium text-white">{social.label}</span>
-                  </a>
-                ))}
+                <div className="grid grid-cols-2 gap-4">
+                  {socialLinks.map((social, index) => (
+                    <a
+                      key={index}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-3 p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 group"
+                    >
+                      <div className={`w-10 h-10 ${social.bgColor} ${social.hoverColor} rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-all duration-300`}>
+                        <social.icon className="text-lg" />
+                      </div>
+                      <span className="font-medium text-white">{social.label}</span>
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
