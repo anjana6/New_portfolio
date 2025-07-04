@@ -98,7 +98,7 @@ const Contact = () => {
             Get in Touch
           </h1>
 
-          <p className="text-gray-300 mb-8 text-center max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-300 mb-8 text-center max-w-2xl mx-auto leading-relaxed px-4">
             I'm always interested in hearing about new opportunities and exciting projects. 
             Feel free to reach out through on these platforms
           </p>
@@ -113,25 +113,21 @@ const Contact = () => {
             </button>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-8">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
               
-              <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8 border border-white/20 shadow-2xl">
-                {/* <h2 className="text-2xl font-bold text-white mb-6">
-                  Contact Details
-                </h2> */}
-
+              <div className="backdrop-blur-md bg-white/10 rounded-2xl p-6 lg:p-8 border border-white/20 shadow-2xl">
                 <div className="space-y-6">
                   {contactInfo.map((info, index) => (
                     <div key={index} className="flex items-center space-x-4 group">
-                      <div className={`w-12 h-12 ${info.bgColor} rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-all duration-300`}>
+                      <div className={`w-12 h-12 ${info.bgColor} rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0`}>
                         <info.icon className="text-xl" />
                       </div>
-                      <div>
+                      <div className="min-w-0 flex-1">
                         <p className="font-semibold text-white">{info.label}</p>
                         <a
                           href={info.href}
-                          className="text-gray-300 hover:text-white transition-colors duration-200"
+                          className="text-gray-300 hover:text-white transition-colors duration-200 break-words"
                         >
                           {info.value}
                         </a>
@@ -142,12 +138,8 @@ const Contact = () => {
               </div>
 
               
-              <div className="backdrop-blur-md bg-white/10 rounded-2xl p-8 border border-white/20 shadow-2xl">
-                {/* <h2 className="text-2xl font-bold text-white mb-6">
-                  Connect With Me
-                </h2> */}
-
-                <div className="grid grid-cols-2 gap-4">
+              <div className="backdrop-blur-md bg-white/10 rounded-2xl p-6 lg:p-8 border border-white/20 shadow-2xl">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {socialLinks.map((social, index) => (
                     <a
                       key={index}
@@ -156,7 +148,7 @@ const Contact = () => {
                       rel="noopener noreferrer"
                       className="flex items-center space-x-3 p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 group"
                     >
-                      <div className={`w-10 h-10 ${social.bgColor} ${social.hoverColor} rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-all duration-300`}>
+                      <div className={`w-10 h-10 ${social.bgColor} ${social.hoverColor} rounded-full flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-all duration-300 flex-shrink-0`}>
                         <social.icon className="text-lg" />
                       </div>
                       <span className="font-medium text-white">{social.label}</span>

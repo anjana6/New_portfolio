@@ -23,7 +23,7 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 bg-[#0e1e25] shadow-lg z-50">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
-          <div className="text-xl font-bold text-white">AS</div>
+          <div className="ml-4 sm:ml-0 text-xl font-bold text-white">AS</div>
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <Link
